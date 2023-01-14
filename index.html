@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>tRAP</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Arial, sans-serif;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 30%;
+}
+</style>
+</head>
+<body>
+<p>You Be My ?  </p>
+<img src="https://media2.giphy.com/media/GKIiTfcyFthV6/giphy.gif?cid=ecf05e47cwc6kwf0mx4bhj2xcp3h7sfoug9yweqebh3jat0c&rid=giphy.gif&ct=g" alt="GIF animado">
+</body>
+<title>Tirap</title>
+<style>
+#button1 {
+position: fixed;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#button2 {
+position: absolute;
+}
+
+
+</style>
+
+</head>
+<body>
+<button id="button1">Yes!</button>
+<button id="button2">No your dumb</button>
+<script>
+setInterval(function() {
+var button2 = document.getElementById('button2');
+var x = Math.random() * window.innerWidth;
+var y = Math.random() * window.innerHeight;
+button2.style.left = x + 'px';
+button2.style.top = y + 'px';
+}, 500);
+</script>
+<script>document.getElementById('button1').addEventListener('click', function() {
+alert('OBVIOUSLY YOU ARE');
+window.location.assign('cont/vdo.html');
+})
+</script>
+</body>
+</html>
